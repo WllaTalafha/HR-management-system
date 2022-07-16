@@ -61,12 +61,12 @@ function PrintData()
 
 
 const Emp1 = new EmpInfo (1000,"Ghazi Samer","Administration","Senior","./assets/Ghazi.jpg");
-const Emp2 = new EmpInfo (1001,"Lana Ali","Finance","Senior","/assets/Lana.jpg"); 
-const Emp3 = new EmpInfo (1002,"Tamara Ayoubr","Marketing","Senior","/assets/Tamara.jpg");
-const Emp4 = new EmpInfo (1003,"Safi Walid","Administration","Mid-Senior","/assets/Safi.jpg");
-const Emp5 = new EmpInfo (1004,"Omar Zaid","Development","Senior","/assets/Omar.jpg");
-const Emp6 = new EmpInfo (1005,"Rana Saleh","Development","Junior","/assets/Rana.jpg");
-const Emp7 = new EmpInfo (1006,"Hadi Ahmad","Finance","Mid-Senior","/assets/Hadi.jpg");
+const Emp2 = new EmpInfo (1001,"Lana Ali","Finance","Senior","./assets/Lana.jpg"); 
+const Emp3 = new EmpInfo (1002,"Tamara Ayoubr","Marketing","Senior","./assets/Tamara.jpg");
+const Emp4 = new EmpInfo (1003,"Safi Walid","Administration","Mid-Senior","./assets/Safi.jpg");
+const Emp5 = new EmpInfo (1004,"Omar Zaid","Development","Senior","./assets/Omar.jpg");
+const Emp6 = new EmpInfo (1005,"Rana Saleh","Development","Junior","./assets/Rana.jpg");
+const Emp7 = new EmpInfo (1006,"Hadi Ahmad","Finance","Mid-Senior","./assets/Hadi.jpg");
 
 
 PrintData();
