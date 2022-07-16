@@ -12,7 +12,7 @@ function EmpInfo (employeeID,fullName,department,level,imageURL) {
     this.salary = this.netSalary();
 
     allEmp.push(this);
-    console.log(this);
+    console.log (this);
 
 }
 
@@ -33,11 +33,22 @@ EmpInfo.prototype.netSalary = function() {
 
 EmpInfo.prototype.render = function() {
 
-    let textPlace = document.getElementById("rend");
+    let place = document.getElementById("rend");
     let x = document.createElement("p");
-    x.textContent = "Employee Name: "+this.fullName+"Salary: "+this.salary+" JD";
-    textPlace.appendChild(x);
+    x.textContent = "Name:"+this.fullName+"-ID:"+this.employeeID+"     "+"Department:"+this.department+"-level:"+this.level+"     "+"Salary:"+this.salary+" JD";
+      // return document.write ("Employee Name: "+this.fullName+"Salary: "+this.salary+" JD");
     
+    let y = document.createElement("img");
+    y.src = this.imageURL;
+    y.alt = "Employee image";
+
+    let z = document.createElement("div");
+    z.appendChild(y);
+    z.appendChild(x);
+    place.appendChild(z);
+    z.setAttribute("class","divs");
+    y.setAttribute("id","img");
+ 
 }
 
 function PrintData()
@@ -49,13 +60,13 @@ function PrintData()
 }
 
 
-const Emp1 = new EmpInfo (1000,"Ghazi Samer","Administration","Senior","");
-const Emp2 = new EmpInfo (1001,"Lana Ali","Finance","Senior",""); 
-const Emp3 = new EmpInfo (1002,"Tamara Ayoubr","Marketing","Senior","");
-const Emp4 = new EmpInfo (1003,"Safi Walid","Administration","Mid-Senior","");
-const Emp5 = new EmpInfo (1004,"Omar Zaid","Development","Senior","");
-const Emp6 = new EmpInfo (1005,"Rana Saleh","Development","Junior","");
-const Emp7 = new EmpInfo (1006,"Hadi Ahmad","Finance","Mid-Senior","");
+const Emp1 = new EmpInfo (1000,"Ghazi Samer","Administration","Senior","./assets/Ghazi.jpg");
+const Emp2 = new EmpInfo (1001,"Lana Ali","Finance","Senior","/assets/Lana.jpg"); 
+const Emp3 = new EmpInfo (1002,"Tamara Ayoubr","Marketing","Senior","/assets/Tamara.jpg");
+const Emp4 = new EmpInfo (1003,"Safi Walid","Administration","Mid-Senior","/assets/Safi.jpg");
+const Emp5 = new EmpInfo (1004,"Omar Zaid","Development","Senior","/assets/Omar.jpg");
+const Emp6 = new EmpInfo (1005,"Rana Saleh","Development","Junior","/assets/Rana.jpg");
+const Emp7 = new EmpInfo (1006,"Hadi Ahmad","Finance","Mid-Senior","/assets/Hadi.jpg");
 
 
 PrintData();
